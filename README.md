@@ -1,4 +1,4 @@
-**⚠** **NÃO ME RESPOSABILIZO **⚠**
+**⚠** **NÃO_ME_RESPOSABILIZO** **⚠**
 
 # Osintgram 🔎📸
 
