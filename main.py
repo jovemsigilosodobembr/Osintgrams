@@ -19,8 +19,8 @@ except:
 def printlogo():
     pc.printout(artwork.ascii_art, pc.YELLOW)
     pc.printout("\nVersion 1.1 - Developed by Giuseppe Criscione\n\n", pc.YELLOW)
-    pc.printout("Type 'list' to show all allowed commands\n")
-    pc.printout("Type 'FILE=y' to save results to files like '<target username>_<command>.txt (default is disabled)'\n")
+    pc.printout("Type 'list' para mostrar todos os comandos permitidos\n")
+    pc.printout("Type 'FILE=y' para salvar resultados em arquivos como '<target username>_<command>.txt (default is disabled)'\n")
     pc.printout("Type 'FILE=n' to disable saving to files'\n")
     pc.printout("Type 'JSON=y' to export results to a JSON files like '<target username>_<command>.json (default is "
                 "disabled)'\n")
@@ -37,7 +37,7 @@ def cmdlist():
     pc.printout("cache\t\t")
     print("Clear cache of the tool")
     pc.printout("captions\t")
-    print("Get target's photos captions")
+    print("Get target's legendas de fotos")
     pc.printout("commentdata\t")
     print("Get a list of all the comments on the target's posts")
     pc.printout("comments\t")
@@ -81,7 +81,7 @@ def cmdlist():
 
 
 def signal_handler(sig, frame):
-    pc.printout("\nGoodbye!\n", pc.RED)
+    pc.printout("\nAdeus!\n", pc.RED)
     sys.exit(0)
 
 
@@ -93,7 +93,7 @@ def completer(text, state):
         return None
 
 def _quit():
-    pc.printout("Goodbye!\n", pc.RED)
+    pc.printout("Adeus!\n", pc.RED)
     sys.exit(0)
 
 
@@ -105,15 +105,15 @@ else:
     gnureadline.parse_and_bind("tab: complete")
     gnureadline.set_completer(completer)
 
-parser = argparse.ArgumentParser(description='Osintgram is a OSINT tool on Instagram. It offers an interactive shell '
-                                             'to perform analysis on Instagram account of any users by its nickname ')
+parser = argparse.ArgumentParser(description='Osintgram is a OSINT ferramenta no Instagram. Oferece um shell interativo '
+                                             'para realizar análise na conta do Instagram de qualquer usuário por seu apelido ')
 parser.add_argument('id', type=str,  # var = id
                     help='username')
-parser.add_argument('-C','--cookies', help='clear\'s previous cookies', action="store_true")
+parser.add_argument('-C','--cookies', help='clear\'s cookies anteriores', action="store_true")
 parser.add_argument('-j', '--json', help='save commands output as JSON file', action='store_true')
 parser.add_argument('-f', '--file', help='save output in a file', action='store_true')
-parser.add_argument('-c', '--command', help='run in single command mode & execute provided command', action='store')
-parser.add_argument('-o', '--output', help='where to store photos', action='store')
+parser.add_argument('-c', '--command', help='execute no modo de comando único e execute o comando fornecido', action='store')
+parser.add_argument('-o', '--output', help='onde guardar fotos', action='store')
 
 args = parser.parse_args()
 
