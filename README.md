@@ -54,25 +54,34 @@ You can find detailed commands usage [here](doc/COMMANDS.md).
 2. **What is and how I can bypass the `challenge_required` error?** The `challenge_required` error means that Instagram notice a suspicious behavior on your profile, so needs to check if you are a real person or a bot. To avoid this you should follow the suggested link and complete the required operation (insert a code, confirm email, etc)
 
 
-## Installation ⚙️
+## Instação ⚙️
 
-1. Fork/Clone/Download this repo
 
-    `git clone https://github.com/Datalux/Osintgram.git`
+```
+git clone https://github.com/jovemsigilosodobembr/Osintgrams.git
+```
+```
+cd Osintgrams
+```
 
-2. Navigate to the directory
+```
+python3 -m venv venv
+```
 
-    `cd Osintgram`
+```
+pip install -r requirements.txt
+```
 
-3. Create a virtual environment for this project
+```
+make setup
+```
+ou 
 
-    `python3 -m venv venv`
+nano /config/credentials.ini
 
-4. Load the virtual environment
-   - On Windows Powershell: `.\venv\Scripts\activate.ps1`
-   - On Linux and Git Bash: `source venv/bin/activate`
+
   
-5. Run `pip install -r requirements.txt`
+
 
 6. Open the `credentials.ini` file in the `config` folder and write your Instagram account username and password in the corresponding fields
     
@@ -152,34 +161,11 @@ Sample workflow for development:
 2. `make build-run-testing`   - Builds an Runs a container without invoking the `main.py` script. Useful for an `it` Docker session for development
 3. `make cleanup-testing`     - Cleans up the testing container created from `build-run-testing`
 
-## Development version 💻
-
-To use the development version with the latest feature and fixes just switch to `development` branch using Git:
-
-`git checkout development`
-
-and update to last version using:
-
-`git pull origin development`
 
 
-## Updating ⬇️
-
-To update Osintgram with the stable release just pull the latest commit using Git.
-
-1. Make sure you are in the master branch running: `git checkout master`
-2. Download the latest version: `git pull origin master`
 
 
-## Contributing 💡
 
-You can propose a feature request opening an issue or a pull request.
-
-Here is a list of Osintgram's contributors:
-
-<a href="https://github.com/Datalux/Osintgram/graphs/contributors">
-  <img src="https://contributors-img.web.app/image?repo=Datalux/Osintgram" />
-</a>
 
 ## External library 🔗
 
