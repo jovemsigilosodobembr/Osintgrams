@@ -1,3 +1,5 @@
+**⚠** **NÃO ME RESPOSABILIZO **⚠**
+
 # Osintgram 🔎📸
 
 [![version-1.3](https://img.shields.io/badge/version-1.3-green)](https://github.com/Datalux/Osintgram/releases/tag/1.3)
@@ -6,33 +8,34 @@
 [![Telegram](https://img.shields.io/badge/Telegram-Channel-blue.svg)](https://t.me/osintgram)
 [![Docker](https://img.shields.io/badge/Docker-Supported-blue)](https://img.shields.io/badge/Docker-Supported-blue)
 
-Osintgram is a **OSINT** tool on Instagram to collect, analyze, and run reconnaissance.
+Osintgram é um **OSINT** ferramenta no Instagram para coletar, analisar e executar **reconhecimento**
 
 <p align="center">
 <img align="center" src=".img/carbon.png" width="900">
 </p>
 
-Disclaimer: **FOR EDUCATIONAL PURPOSE ONLY! The contributors do not assume any responsibility for the use of this tool.**
+Disclaimer: responsabilidade: **APENAS PARA FINS EDUCACIONAIS! Os colaboradores não assumem qualquer responsabilidade pelo uso desta ferramenta.**
 
-Warning: It is advisable to **not** use your own/primary account when using this tool.
 
-## Tools and Commands 🧰
+Aviso: É aconselhável **não** usar sua própria conta/conta principal ao usar esta ferramenta.
 
-Osintgram offers an interactive shell to perform analysis on Instagram account of any users by its nickname. You can get:
+## Ferramentas e comandos 🧰
+
+O Osintgram oferece um shell interativo para realizar análises na conta do Instagram de qualquer usuário por seu apelido. Você pode ter:
 
 ```text
-- addrs           Get all registered addressed by target photos
-- captions        Get user's photos captions
-- comments        Get total comments of target's posts
-- followers       Get target followers
-- followings      Get users followed by target
-- fwersemail      Get email of target followers
-- fwingsemail     Get email of users followed by target
-- fwersnumber     Get phone number of target followers
-- fwingsnumber    Get phone number of users followed by target
+- addrs           Obtenha todos os registrados endereçados por fotos de destino
+- captions        Obter legendas de fotos do usuário
+- comments        Obtenha o total de comentários das postagens do alvo
+- followers       Obtenha seguidores alvo
+- followings      Obter usuários seguidos por destino
+- fwersemail      Receba e-mail de seguidores alvo
+- fwingsemail     Obter e-mail de usuários seguidos por destino
+- fwersnumber     Obtenha o número de telefone dos seguidores de destino
+- fwingsnumber    Obtenha o número de telefone dos usuários seguido pelo destino
 - hashtags        Get hashtags used by target
-- info            Get target info
-- likes           Get total likes of target's posts
+- info            Obter informações de destino
+- likes          Obtenha curtidas totais das postagens do alvo
 - mediatype       Get user's posts type (photo or video)
 - photodes        Get description of target's photos
 - photos          Download user's photos in output folder
